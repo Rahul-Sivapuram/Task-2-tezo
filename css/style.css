@@ -1,5 +1,5 @@
 body{
-    margin-right: 2rem;
+    padding-right: 2rem;
     font-family: 'Roboto', sans-serif;
     margin-top: .5rem;    
 }
@@ -358,6 +358,72 @@ body{
     width: 1.25rem;
     margin-right: .5rem;
 }
+
+/* filter section */
+.filter-magic{
+    height: 3rem;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 12.9rem;
+    margin-top: 2rem;
+    padding-left: .6rem;
+    padding-right: .6rem;
+    border: 2px solid rgba(251,212,212,255);
+    border-radius: .5rem;
+    background-color: rgba(253,242,242,255);
+}
+.filter-left
+{
+    height: 3rem;
+    display: flex;
+    gap: .5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.filter-right{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    justify-content: space-between;
+}
+.reset-button{
+    height: 1.7rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgba(255,121,131,255);
+    background-color: white;
+    color:rgba(255,121,131,255);    
+    border-radius: .3rem;
+    font-size: .8rem;
+}
+.apply-button{
+    height: 1.7rem
+    ;width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgba(255,121,131,255);
+    background-color: rgba(244,72,72,255);
+    color:white;    
+    border-radius: .3rem;
+    font-size: .8rem;
+}
+select{
+    border:1px solid rgba(255,121,131,255);
+    padding: .5rem;
+    border-radius: .3rem;
+    color: rgba(108,120,145,255);
+}
+.filter-icon{
+    display: flex;
+    gap: .4rem;
+}
+.filter-icon span{color: rgba(246,118,118,255);font-size: .9rem;}
+
 
 /* user-section */
 .user-section

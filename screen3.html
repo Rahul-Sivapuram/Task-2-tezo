@@ -68,7 +68,7 @@
                         <path d="M9.99996 12.1917C9.94996 12.1833 9.89163 12.1833 9.84163 12.1917C8.69163 12.15 7.77496 11.2083 7.77496 10.0417C7.77496 8.85 8.7333 7.89166 9.92496 7.89166C11.1166 7.89166 12.075 8.85833 12.075 10.0417C12.0666 11.2083 11.15 12.1583 9.99996 12.1917Z" stroke="#757575" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M7.57498 14.8167C6.39998 15.6 6.39998 16.8833 7.57498 17.6667C8.90831 18.5583 11.0916 18.5583 12.425 17.6667C13.6 16.8833 13.6 15.6 12.425 14.8167C11.1 13.9333 8.90831 13.9333 7.57498 14.8167Z" stroke="#757575" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg> 
-                    <span>Employees</span>
+                    <span id="screen3-emp">Employees</span>
                 </div>
 
                 <p class="heading">ROLE / USER MANAGEMENT</p>
@@ -89,19 +89,21 @@
                     <div class="corner-line"></div>
                 </div>
             
-                <div class="dashboard">
-                    <div class="dash-left">
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 12.75C8.83 12.75 6.25 10.17 6.25 7C6.25 3.83 8.83 1.25 12 1.25C15.17 1.25 17.75 3.83 17.75 7C17.75 10.17 15.17 12.75 12 12.75ZM12 2.75C9.66 2.75 7.75 4.66 7.75 7C7.75 9.34 9.66 11.25 12 11.25C14.34 11.25 16.25 9.34 16.25 7C16.25 4.66 14.34 2.75 12 2.75Z" fill="#5F5F5F"/>
-                            <path d="M20.5901 22.75C20.1801 22.75 19.8401 22.41 19.8401 22C19.8401 18.55 16.3202 15.75 12.0002 15.75C7.68015 15.75 4.16016 18.55 4.16016 22C4.16016 22.41 3.82016 22.75 3.41016 22.75C3.00016 22.75 2.66016 22.41 2.66016 22C2.66016 17.73 6.85015 14.25 12.0002 14.25C17.1502 14.25 21.3401 17.73 21.3401 22C21.3401 22.41 21.0001 22.75 20.5901 22.75Z" fill="#5F5F5F"/>
-                            </svg>
-                        <span>Access Rights</span>
+                <div class="special-button">
+                    <div class="dashboard-seperate">
+                        <div class="dash-left">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 12.75C8.83 12.75 6.25 10.17 6.25 7C6.25 3.83 8.83 1.25 12 1.25C15.17 1.25 17.75 3.83 17.75 7C17.75 10.17 15.17 12.75 12 12.75ZM12 2.75C9.66 2.75 7.75 4.66 7.75 7C7.75 9.34 9.66 11.25 12 11.25C14.34 11.25 16.25 9.34 16.25 7C16.25 4.66 14.34 2.75 12 2.75Z" fill="#5F5F5F"/>
+                                <path d="M20.5901 22.75C20.1801 22.75 19.8401 22.41 19.8401 22C19.8401 18.55 16.3202 15.75 12.0002 15.75C7.68015 15.75 4.16016 18.55 4.16016 22C4.16016 22.41 3.82016 22.75 3.41016 22.75C3.00016 22.75 2.66016 22.41 2.66016 22C2.66016 17.73 6.85015 14.25 12.0002 14.25C17.1502 14.25 21.3401 17.73 21.3401 22C21.3401 22.41 21.0001 22.75 20.5901 22.75Z" fill="#5F5F5F"/>
+                                </svg>
+                            <span>Access Rights</span>
+                        </div>
+                        <div class="dash-right">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" fill="#808080"/></svg>
+                        </div>
                     </div>
-                    <div class="dash-right">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" fill="#808080"/></svg>
-                    </div>
+                    <div class="corner-line"></div>
                 </div>
-
             </div>
         </div> 
         <!-- update section -->
@@ -480,6 +482,14 @@
     
     <!-- script -->
     <script>
+
+        document.querySelector(".arrow-item").addEventListener("click",function(){
+            window.location.href="screen2.html";
+        });
+        document.getElementById("screen3-emp").addEventListener("click",function(){
+            window.location.href="index.html";
+        });
+
         function showsidebar(){
             const sd=document.querySelector(".sidebar");
             const menu=document.querySelector(".menu");
@@ -491,9 +501,12 @@
         }
         function hidesidebar(){
             const sd=document.querySelector(".sidebar");
+            const hd=document.querySelector(".header-searchbar");
             const menu=document.querySelector(".menu");
             menu.style.display="block";
             sd.style.display="none";
+            hd.style.margin="0";
+
         }
     </script>
 </body>
