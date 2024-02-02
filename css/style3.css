@@ -10,46 +10,42 @@ body{
     flex-direction: column;
     gap: 1rem;
 }
+.sidebar-buttons a{
+    text-decoration: none;
+}
 .sidebar-buttons span{
     color: rgba(129,133,137,255);
     font-weight: 500;
 }
-.logo
-{
+.logo{
     width: 6rem;
 }
-.backbutton
-{
+.backbutton{
     height: 2rem;
     width: 2rem;
 }
-.logo-arrow
-{
+.logo-arrow{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header-ul
-{
+.navbar{
     display: flex;
-
     align-items: center;
     justify-content: space-between;
 }
-.header-ul li
-{
+.navbar li{
     list-style: none;
 }
-.dash-right svg
-{
+.dash-right svg{
     height: .8rem;
     width: 1rem;
 }
 .menu{
-    width: 20%;
+    display: none;
 }
-.header-searchbar
-{
+.header-searchbar{
+    margin-left: 12.9rem;
     padding-left: .5rem;
     padding-right: .5rem;
     height: 3rem;
@@ -59,6 +55,12 @@ body{
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: .3rem;
+}
+.search-box{
+    width: 100%;
+}
+.search-box:focus{
+    outline: none;
 }
 ::placeholder{
     color: rgba(208,213,218,255);
@@ -73,87 +75,75 @@ body{
     margin-top: -.8rem;
     margin-left: 1.5rem;
 }
-.searchpart
-{
+.search-field{
     display: flex;
     align-items: center;
     gap: 1rem;
     width: 60%;
 }
-.searchpart img
-{
+.search-field img{
     height: 1.5rem;
     width: 1.5rem;
 }
-.profile
-{
+.profile{
     display: flex;
     align-items: center;
     margin-left: 5rem;
     margin-right: .5rem;
     height: 3rem;
 }
-.profile img
-{
+.profile img{
     height: 2rem;
     width: 2rem;
+    cursor: pointer;
 }
-.profile-box
-{
+.profile-box{
     height: 3rem;
     display: flex;
     gap: 1rem;
     align-items: center;
 }
-.man
-{
+.man{
     position: relative;
     z-index: 3;
 }
-.man img
-{
+.man img{
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
 }
-.profile-box p
-{
+.profile-box span{
     font-size: .7rem;
 }
-.profile-box span
-{
+.profile-box .span-inside{
     font-weight: bold;
 }
-#search
-{
+#search{
     border: none;
 }
 
 /* vertical sidebar */
 .sidebar{
-    margin-top: -.1rem;
+    margin-top: -4rem;
     position: absolute;
     padding-left: .2rem;
     padding-top: 1.4rem;
     width: 190px;
     height: 100%;
-    display: none;
+    display: flex;
     justify-content: space-between;
     flex-direction: column;
     gap: 27rem;
 }
-.dashboard select
-{
+.dashboard select{
     width: 9rem;
     border: none;
     height: 1rem;
 }
-.employee-seperate
-{
+.employee-seperate{
     color:rgba(245,92,92,255);
 }
-.dashboard
-{
+.dashboard{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -164,8 +154,7 @@ body{
     color: rgba(166,169,172,255);
     font-size: .7rem;
 }
-.dashboard-seperate
-{
+.dashboard-seperate{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -197,8 +186,7 @@ body{
     display:flex;
     justify-content: space-between;
 }
-.dash-left
-{
+.dash-left{
     margin-left: .3rem;
     display: flex;
     gap: .4rem;
@@ -212,20 +200,15 @@ body{
     color: rgba(127,131,135,255);
     font-weight: 500;
 }
-
-
-.heading
-{
-   
+.heading{  
     margin-top: 1rem;
     font-size: .7rem;
     color: rgba(211,212,213,255);
     font-weight: 500;
 }
-
-.department-button-left
-{
+.department-button-left{
     margin-left: .5rem;
+    cursor: pointer;
     margin-top: 0;
     display: flex;
     align-items: center;
@@ -233,12 +216,10 @@ body{
     gap: 1rem;
     color: rgba(166,170,173,255);
 }
-.sidebar li
-{
+.sidebar li{
     list-style: none;
 }
-.update-section
-{
+.update-section{
     height: fit-content;
     width: fit-content;
     margin-right: 1rem;
@@ -247,32 +228,32 @@ body{
     font-size: .8rem;
     padding: .6rem .5rem .6rem .5rem;
 }
-.install
-{
+.install{
     color: rgba(245,96,96,255);
 }
-.dismiss-button
-{
+.dismiss-button{
     width: 5rem;
     height: 2rem;
     display: flex;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
     border-radius: .4rem;
     background-color: rgba(253,230,230,255);
     color: rgba(248,145,145,255);
+    border: none;
 }
-.update-buttons
-{
+.update-buttons{
     display: flex;
     align-items: center;
     gap: .5rem;
 }
-.accept-button
-{
+.accept-button{
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
     width: 5rem;
     height: 2rem;
     border-radius: .4rem;
@@ -280,15 +261,15 @@ body{
     color: white;
 }
 /* add employee section */
-.add-employee
-{
+.add-employee{
+    margin-top: 1.4rem;
     margin-left: 12.9rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.add-employee-button
-{
+.add-employee-button{
+    border: none;
     width: 10rem;
     display: flex;
     justify-content: center;
@@ -328,15 +309,16 @@ body{
     border: 2px solid rgba(251,212,212,255);
     border-radius: .5rem;
 }
-.filter-left
-{
+.filter-left{
     display: flex;
     justify-content: space-between;
+    gap: .5rem;
     width: 29%;
     align-items: center;
 }
 .filter-right{
     display: flex;
+    gap: .4rem;
     width: 15%;
     justify-content: space-between;
 }
@@ -345,6 +327,7 @@ body{
     width: 4rem;
     display: flex;
     justify-content: center;
+    cursor: pointer;
     align-items: center;
     border:1px solid rgba(255,121,131,255);
     background-color: white;
@@ -353,6 +336,7 @@ body{
     font-size: .8rem;
 }
 .apply-button{
+    cursor: pointer;
     height: 1.7rem
     ;width: 4rem;
     display: flex;
@@ -362,8 +346,7 @@ body{
     background-color: rgba(244,72,72,255);
     color:white;    
     border-radius: .3rem;
-    font-size: .8rem;
-}
+    font-size: .8rem;}
 select{
     border:1px solid rgba(255,121,131,255);
     padding: .5rem;
@@ -374,7 +357,10 @@ select{
     display: flex;
     gap: .4rem;
 }
-.filter-icon span{color: rgba(246,118,118,255);font-size: .9rem;}
+.filter-icon span{
+    color: rgba(246,118,118,255);
+    font-size: .9rem;
+}
 
 /* Info card list */
 .info-cards-list{
@@ -385,7 +371,7 @@ select{
     gap: .7rem;
 }
 .info-card{
-    width: 18rem;
+    width: 15rem;
     padding-top: 1rem;
     padding-left: 1.5rem;
     padding-right: 1rem;
@@ -413,6 +399,7 @@ select{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 .arrow-item span{
     color: rgba(108,120,145,255);font-size: .8rem;font-weight: 500;   

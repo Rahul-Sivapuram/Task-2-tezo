@@ -10,44 +10,45 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!--searchbar and sidebar -->
-    <div class="header-ul">
-        <div onclick=showsidebar() class="menu">
+    <!-- Navbar -->
+    <div class="navbar">
+        <div onclick=ShowSidebar() class="menu">
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
         </div>
         <div>
             <div class="header-searchbar">
-                <div class="searchpart">
-                    <img src="./images/bx-search.png" alt="search symbol">
-                    <input type="search" name="search"  id="search" placeholder="Search (Ctrl+/)">
+                <div class="search-field">
+                    <img src="./images/bxsearch.png" alt="Search symbol">
+                    <input type="search" name="search"  id="search" placeholder="Search (Ctrl+/)" class="search-box">
                 </div>
                 <div class="profile">
-                    <img src="./images/chineese.png" alt="search symbol" srcset="">
-                    <img src="./images/icon1.png" alt="menu symbol" srcset="">
-                    <img src="./images/icon2.png" alt="moon symbol" srcset="">
-                    <img src="./images/icon3.png" alt="bell symbol" srcset="">                         
+                    <img src="./images/chineese.png" alt="Search symbol" srcset="">
+                    <img src="./images/icon1.png" alt="Menu symbol" srcset="">
+                    <img src="./images/icon2.png" alt="Moon symbol" srcset="">
+                    <img src="./images/icon3.png" alt="Bell symbol" srcset="">                         
                 </div>
                 <div class="profile-box">
                     <div class="man">
-                        <img src="./images/man.jpg" alt="" srcset="">
+                        <img src="./images/man.jpg" alt="Human Avatar" srcset="">
                         <div class="green-dot"></div>
                     </div>
-                    <p>John Abraham<br><span>Admin</span></p>
+                    <span>John Abraham<br><span class="span-inside">Admin</span></span>
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
                 </div>   
             </div>
         </div>
     </div>
 
+    <!-- Sidebar -->
     <div class="sidebar">
         <div class="logo-arrow">
-            <img src="./images/tezo.png" alt="tezo logo" class="logo">  
-            <img src="./images/handle.png" alt="back button" class="backbutton" onclick=hidesidebar()>     
+            <img src="./images/tezo.png" alt="Tezo logo" class="logo">  
+            <img src="./images/handle.png" alt="Back button" class="backbutton" onclick=HideSidebar()>     
         </div>     
-        <p class="heading">ALL</p>
+        <h3 class="heading">ALL</h3>
         <div class="dashboard">
             <div class="dash-left">
-                <img src="./images/bx-lock.png" alt="lock image" srcset="">
+                <img src="./images/bxlock.png" alt="Lock image" srcset="">
                 <span>Dashboard</span>
             </div>
             <div class="dash-right">
@@ -56,7 +57,7 @@
         </div>
         <div class="dashboard">
             <div class="dash-left">
-                <img src="./images/bx-lock.png" alt="lock image" srcset="">
+                <img src="./images/bxlock.png" alt="Lock image" srcset="">
                 <span>Roles</span>
             </div>
             <div class="dash-right">
@@ -65,7 +66,7 @@
         </div>
         <div class="dashboard-seperate">
             <div class="dash-left">
-                <img src="./images/bx-home-smile.png" alt="smiling house" srcset="">
+                <img src="./images/bxhomesmile.png" alt="Smiling house" srcset="">
                 <span class="employee-seperate">Employees</span>
             </div>
             <div class="dash-seperate-right">
@@ -84,12 +85,12 @@
             <div class="greydot"></div>
             <span>In Active</span>
         </div>
-        <p class="heading">DEPARTMENTS</p>
+        <h3 class="heading">DEPARTMENTS</h3>
         
         <div class="department-button">
             <div class="department-button-left">
                 <div class="greydot"></div>
-                <span>IT</span>
+                <a href="#">IT</a>
             </div>
             <div class="department-button-square">
                 3
@@ -98,7 +99,7 @@
         <div class="department-button">
             <div class="department-button-left">
                 <div class="greydot"></div>
-                <span>UI/UX</span>
+                <a href="#">UI/UX</a>
             </div>
             <div class="department-button-square">
                 3
@@ -107,7 +108,7 @@
         <div class="department-button">
             <div class="department-button-left">
                 <div class="greydot"></div>
-                <span>PE</span>
+                <a href="#">PE</a>
             </div>
             <div class="department-button-square">
                 2
@@ -116,7 +117,7 @@
         <div class="department-button">
             <div class="department-button-left">
                 <div class="greydot"></div>
-                <span>Human Resources</span>
+                <a href="#">Human Resources</a>
             </div>
             <div class="department-button-square">
                 24
@@ -125,26 +126,26 @@
         <div class="department-button">
             <div class="department-button-left">
                 <div class="greydot"></div>
-                <span>Sales</span>
+                <a href="#">Sales</a>
             </div>
             <div class="department-button-square">
                 12
             </div>
         </div>
         <!-- ROLE/USER MANAGEMENT -->
-        <p class="heading">ROLE/USER MANAGEMENT</p>
+        <h3 class="heading">ROLE/USER MANAGEMENT</h3>
         <div class="dashboard">
             <div class="dash-left">
-                <img src="./images/bx-lock.png" alt="lock image" srcset="">
+                <img src="./images/bxlock.png" alt="Lock image" srcset="">
                 <span>Roles</span>
             </div>
             <div class="dash-right">
-                <a href="screen3.html"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" fill="#808080"/></svg></a>
+                <a href="index3.html"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" fill="#808080"/></svg></a>
             </div>
         </div>
         <div class="dashboard">
             <div class="dash-left">
-                <img src="./images/bx-lock.png" alt="lock image" srcset="">
+                <img src="./images/bxlock.png" alt="Lock image" srcset="">
                 <span>Assign User Roles</span>
             </div>
             <div class="dash-right">
@@ -154,7 +155,7 @@
 
         <!-- update section -->
         <div class="update-section">
-            <p class="install">Install new update 2.3.1A</p>
+            <span class="install">Install new update 2.3.1A</span>
             <p>Allow to launch the new update<br>for the AD application</p>
             <div class="update-buttons">
                 <div class="dismiss-button">
@@ -167,8 +168,7 @@
         </div>             
     </div>
     
-
-    <!-- add-employee section -->
+    <!-- Add-Employee Section -->
     <section class="add-employee">
         <div class="add-employee-conetentpart">
             <h2>Employees</h2>
@@ -176,106 +176,106 @@
         </div>
         
         <div class="add-employee-buttons">
-            <div class="export-button">
-                <img src="./images/upload.png" alt="upload image" srcset="">
-                <span>EXPORT</span>
-            </div>
-            <div class="add-employee-button">
+            <button class="export-button">
+                <img src="./images/upload.png" alt="Upload image" srcset="">
+                EXPORT
+            </button>
+            <button class="add-employee-button">
                 <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" fill="#ffffff"/></svg>
-                <p>ADD EMPLOYEEE</p>
-            </div>    
+                ADD EMPLOYEEE
+            </button>    
         </div>
     </section>
 
-    <!--Filter By Alphabets Section -->
+    <!--Filter By Alphabet Section -->
     <section class="filter">
-        <img src="./images/filter.png" alt="filter-icon" class="filter-image" onclick="filtersection()">
-        <div class="alphabets">
+        <img src="./images/filter.png" alt="Filter icon" class="filter-image" onclick="FilterSection()">
+        <div class="alphabet">
             <span>A</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>B</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>C</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>D</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>E</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>F</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>G</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>H</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>I</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>J</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>K</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>L</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>M</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>N</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>O</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>P</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>Q</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>R</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>S</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>T</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>U</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>V</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>W</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>X</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>Y</span>
         </div>
-        <div class="alphabets">
+        <div class="alphabet">
             <span>Z</span>
         </div>
     </section>
 
-    <!-- js magic -->
-    <section class="filter-magic">
+    <!-- Filter Options Section -->
+    <section class="filter-option">
         <div class="filter-left">
             <div class="filter-icon">
                 <span>Filter</span>
-                <img src="./images/s3-filter.png" width="15px" height="15px" alt="filter icon">
+                <img src="./images/s3filter.png" width="15px" height="15px" alt="Filter icon">
             </div>
             <div class="department-selection">
                 <select name="departments" id="departments">
@@ -298,336 +298,305 @@
         </div>
     </section>
 
-    
     <!-- users table section -->
     <section class="user-section">
         <div class="delete-add-row">
             <div class="arrow-down">
-                <img src="./images/downarrow.png" alt="" srcset="">
+                <img src="./images/downarrow.png" alt="Downarrow image" srcset="">
                 <div class="delete-button">
-                    <p>Delete</p>
+                    <span>Delete</span>
                 </div>
             </div>
-            <img src="./images/table-add.png" alt="" srcset="">
+            <img src="./images/tableadd.png" alt="Addtable image" srcset="">
         </div>
         <br>
         <table>
-            <tr>
+            <thead>
                 <th>
-                    <input type="radio" name="sample" id="sample"><label for="sample"></label>
+                    <input type="radio" name="checkbox1" id="checkbox1"><label for="sample"></label>
                 </th>
                 <th>
                     <div class="inside-labels-user">
-                        <p>USER</p>
-                        <img src="./images/up-and-down-arrow.png" alt="upward and downward arrow">
+                        <span>USER</span>
+                        <img src="./images/upanddownarrow.png" alt="upward and downward arrow">
                     </div>
                 </th>
                 <th>
                     <div class="inside-labels-user">
-                        <p>LOCATION</p>
-                        <img src="./images/up-and-down-arrow.png" alt="upward and downward arrow">
+                        <span>LOCATION</span>
+                        <img src="./images/upanddownarrow.png" alt="upward and downward arrow">
                     </div>
                 </th>
                 <th>
                     <div class="inside-labels-user">
-                        <p>DEPARTMENT</p>
-                        <img src="./images/up-and-down-arrow.png" alt="upward and downward arrow">
+                        <span>DEPARTMENT</span>
+                        <img src="./images/upanddownarrow.png" alt="upward and downward arrow">
                     </div>
                 </th>
                 <th>
                     <div class="inside-labels-user">
-                        <p>ROLE</p>
-                        <img src="./images/up-and-down-arrow.png" alt="upward and downward arrow">
+                        <span>ROLE</span>
+                        <img src="./images/upanddownarrow.png" alt="upward and downward arrow">
                     </div>
                 </th>
                 <th>
                     <div class="inside-labels-user">
-                        <p>EMP NO</p>
-                        <img src="./images/up-and-down-arrow.png" alt="upward and downward arrow">
+                        <span>EMP NO</span>
+                        <img src="./images/upanddownarrow.png" alt="upward and downward arrow">
                     </div>
                 </th>
                 <th>
                     <div class="inside-labels-user">
-                        <p>STATUS</p>
-                        <img src="./images/up-and-down-arrow.png" alt="upward and downward arrow">
+                        <span>STATUS</span>
+                        <img src="./images/upanddownarrow.png" alt="upward and downward arrow">
                     </div>
                 </th>
                 <th>
                     <div class="inside-labels-user">
-                        <p>JOIN DT</p>
-                        <img src="./images/up-and-down-arrow.png" alt="upward and downward arrow">
+                        <span>JOIN DT</span>
+                        <img src="./images/upanddownarrow.png" alt="upward and downward arrow">
                     </div>
                 </th>
                 <th>
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg>
                 </th>
-            </tr>
+            </thead>
             
-            <tr>
-                <td><input type="radio" name="sample" id="sample"><label for="sample"></label></td>
-                <td>
-                    <div class="user-profile-box">
-                        <img src="./images/man.jpg" alt="" srcset="">
-                        <p>Edgar Jones<br><span>edgar@tezo.com</span></p>
-                    </div> 
-                </td>
-                <td>Hyderabad</td>
-                <td>Product Engg</td>
-                <td>Full-stack Developer</td>
-                <td>TZ002341</td>
-                <td>
-                    <div class="active-button">
-                        <span>Active</span>
-                    </div>
-                </td>
-                <td>12/03/2023</td>
-                <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
-            </tr>
-
-            <tr>
-                <td><input type="radio" name="sample" id="sample"><label for="sample"></label></td>
-                <td>
-                    <div class="user-profile-box">
-                        <img src="./images/man.jpg" alt="" srcset="">
-                        <p>Edgar Jones<br><span>edgar@tezo.com</span></p>
-                    </div> 
-                </td>
-                <td>Hyderabad</td>
-                <td>Product Engg</td>
-                <td>Full-stack Developer</td>
-                <td>TZ002341</td>
-                <td>
-                    <div class="active-button">
-                        <span>Active</span>
-                    </div>
-                </td>
-                <td>12/03/2023</td>
-                <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
-            </tr>
-
-            <tr>
-                <td><input type="radio" name="sample" id="sample"><label for="sample"></label></td>
-                <td>
-                    <div class="user-profile-box">
-                        <img src="./images/man.jpg" alt="" srcset="">
-                        <p>Edgar Jones<br><span>edgar@tezo.com</span></p>
-                    </div> 
-                </td>
-                <td>Hyderabad</td>
-                <td>Product Engg</td>
-                <td>Full-stack Developer</td>
-                <td>TZ002341</td>
-                <td>
-                    <div class="active-button">
-                        <span>Active</span>
-                    </div>
-                </td>
-                <td>12/03/2023</td>
-                <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
-            </tr>
-
-            <tr>
-                <td><input type="radio" name="sample" id="sample"><label for="sample"></label></td>
-                <td>
-                    <div class="user-profile-box">
-                        <img src="./images/man.jpg" alt="" srcset="">
-                        <p>Edgar Jones<br><span>edgar@tezo.com</span></p>
-                    </div> 
-                </td>
-                <td>Hyderabad</td>
-                <td>Product Engg</td>
-                <td>Full-stack Developer</td>
-                <td>TZ002341</td>
-                <td>
-                    <div class="active-button">
-                        <span>Active</span>
-                    </div>
-                </td>
-                <td>12/03/2023</td>
-                <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
-            </tr>
-
-            <tr>
-                <td><input type="radio" name="sample" id="sample"><label for="sample"></label></td>
-                <td>
-                    <div class="user-profile-box">
-                        <img src="./images/man.jpg" alt="" srcset="">
-                        <p>Edgar Jones<br><span>edgar@tezo.com</span></p>
-                    </div> 
-                </td>
-                <td>Hyderabad</td>
-                <td>Product Engg</td>
-                <td>Full-stack Developer</td>
-                <td>TZ002341</td>
-                <td>
-                    <div class="active-button">
-                        <span>Active</span>
-                    </div>
-                </td>
-                <td>12/03/2023</td>
-                <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
-            </tr>
-
-            <tr>
-                <td><input type="radio" name="sample" id="sample"><label for="sample"></label></td>
-                <td>
-                    <div class="user-profile-box">
-                        <img src="./images/man.jpg" alt="" srcset="">
-                        <p>Edgar Jones<br><span>edgar@tezo.com</span></p>
-                    </div> 
-                </td>
-                <td>Hyderabad</td>
-                <td>Product Engg</td>
-                <td>Full-stack Developer</td>
-                <td>TZ002341</td>
-                <td>
-                    <div class="active-button">
-                        <span>Active</span>
-                    </div>
-                </td>
-                <td>12/03/2023</td>
-                <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
-            </tr>
-
-            <tr>
-                <td><input type="radio" name="sample" id="sample"><label for="sample"></label></td>
-                <td>
-                    <div class="user-profile-box">
-                        <img src="./images/man.jpg" alt="" srcset="">
-                        <p>Edgar Jones<br><span>edgar@tezo.com</span></p>
-                    </div> 
-                </td>
-                <td>Hyderabad</td>
-                <td>Product Engg</td>
-                <td>Full-stack Developer</td>
-                <td>TZ002341</td>
-                <td>
-                    <div class="active-button">
-                        <span>Active</span>
-                    </div>
-                </td>
-                <td>12/03/2023</td>
-                <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
-            </tr>
-
-            <tr>
-                <td><input type="radio" name="sample" id="sample"><label for="sample"></label></td>
-                <td>
-                    <div class="user-profile-box">
-                        <img src="./images/man.jpg" alt="" srcset="">
-                        <p>Edgar Jones<br><span>edgar@tezo.com</span></p>
-                    </div> 
-                </td>
-                <td>Hyderabad</td>
-                <td>Product Engg</td>
-                <td>Full-stack Developer</td>
-                <td>TZ002341</td>
-                <td>
-                    <div class="active-button">
-                        <span>Active</span>
-                    </div>
-                </td>
-                <td>12/03/2023</td>
-                <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
-            </tr>
-
-            <tr>
-                <td><input type="radio" name="sample" id="sample"><label for="sample"></label></td>
-                <td>
-                    <div class="user-profile-box">
-                        <img src="./images/man.jpg" alt="" srcset="">
-                        <p>Edgar Jones<br><span>edgar@tezo.com</span></p>
-                    </div> 
-                </td>
-                <td>Hyderabad</td>
-                <td>Product Engg</td>
-                <td>Full-stack Developer</td>
-                <td>TZ002341</td>
-                <td>
-                    <div class="active-button">
-                        <span>Active</span>
-                    </div>
-                </td>
-                <td>12/03/2023</td>
-                <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
-            </tr>
-
-            <tr>
-                <td><input type="radio" name="sample" id="sample"><label for="sample"></label></td>
-                <td>
-                    <div class="user-profile-box">
-                        <img src="./images/man.jpg" alt="" srcset="">
-                        <p>Edgar Jones<br><span>edgar@tezo.com</span></p>
-                    </div> 
-                </td>
-                <td>Hyderabad</td>
-                <td>Product Engg</td>
-                <td>Full-stack Developer</td>
-                <td>TZ002341</td>
-                <td>
-                    <div class="active-button">
-                        <span>Active</span>
-                    </div>
-                </td>
-                <td>12/03/2023</td>
-                <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
-            </tr>
-
-            <tr>
-                <td><input type="radio" name="sample" id="sample"><label for="sample"></label></td>
-                <td>
-                    <div class="user-profile-box">
-                        <img src="./images/man.jpg" alt="" srcset="">
-                        <p>Edgar Jones<br><span>edgar@tezo.com</span></p>
-                    </div> 
-                </td>
-                <td>Hyderabad</td>
-                <td>Product Engg</td>
-                <td>Full-stack Developer</td>
-                <td>TZ002341</td>
-                <td>
-                    <div class="active-button">
-                        <span>Active</span>
-                    </div>
-                </td>
-                <td>12/03/2023</td>
-                <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td><input type="radio" name="checkbox2" id="checkbox2"><label for="sample"></label></td>
+                    <td>
+                        <div class="user-profile-box">
+                            <img src="./images/man.jpg" alt="Human Avatar" srcset="">
+                            <span class="span-outside-userprofilebox">Edgar Jones<br><span class="span-inside-userprofilebox">edgar@tezo.com</span></span>
+                        </div> 
+                    </td>
+                    <td>Hyderabad</td>
+                    <td>Product Engg</td>
+                    <td>Full-stack Developer</td>
+                    <td>TZ002341</td>
+                    <td>
+                        <div class="active-button">
+                            <span>Active</span>
+                        </div>
+                    </td>
+                    <td>12/03/2023</td>
+                    <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
+                </tr>
+    
+                <tr>
+                    <td><input type="radio" name="checkbox3" id="checkbox3"><label for="sample"></label></td>
+                    <td>
+                        <div class="user-profile-box">
+                            <img src="./images/man.jpg" alt="Human Avatar" srcset="">
+                            <span class="span-outside-userprofilebox">Edgar Jones<br><span class="span-inside-userprofilebox">edgar@tezo.com</span></span>
+                        </div> 
+                    </td>
+                    <td>Hyderabad</td>
+                    <td>Product Engg</td>
+                    <td>Full-stack Developer</td>
+                    <td>TZ002341</td>
+                    <td>
+                        <div class="active-button">
+                            <span>Active</span>
+                        </div>
+                    </td>
+                    <td>12/03/2023</td>
+                    <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
+                </tr>
+    
+                <tr>
+                    <td><input type="radio" name="checkbox4" id="checkbox4"><label for="sample"></label></td>
+                    <td>
+                        <div class="user-profile-box">
+                            <img src="./images/man.jpg" alt="Human Avatar" srcset="">
+                            <span class="span-outside-userprofilebox">Edgar Jones<br><span class="span-inside-userprofilebox">edgar@tezo.com</span></span>
+                        </div> 
+                    </td>
+                    <td>Hyderabad</td>
+                    <td>Product Engg</td>
+                    <td>Full-stack Developer</td>
+                    <td>TZ002341</td>
+                    <td>
+                        <div class="active-button">
+                            <span>Active</span>
+                        </div>
+                    </td>
+                    <td>12/03/2023</td>
+                    <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
+                </tr>
+    
+                <tr>
+                    <td><input type="radio" name="checkbox5" id="checkbox5"><label for="sample"></label></td>
+                    <td>
+                        <div class="user-profile-box">
+                            <img src="./images/man.jpg" alt="Human Avatar" srcset="">
+                            <span class="span-outside-userprofilebox">Edgar Jones<br><span class="span-inside-userprofilebox">edgar@tezo.com</span></span>
+                        </div> 
+                    </td>
+                    <td>Hyderabad</td>
+                    <td>Product Engg</td>
+                    <td>Full-stack Developer</td>
+                    <td>TZ002341</td>
+                    <td>
+                        <div class="active-button">
+                            <span>Active</span>
+                        </div>
+                    </td>
+                    <td>12/03/2023</td>
+                    <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
+                </tr>
+    
+                <tr>
+                    <td><input type="radio" name="checkbox6" id="checkbox6"><label for="sample"></label></td>
+                    <td>
+                        <div class="user-profile-box">
+                            <img src="./images/man.jpg" alt="Human Avatar" srcset="">
+                            <span class="span-outside-userprofilebox">Edgar Jones<br><span class="span-inside-userprofilebox">edgar@tezo.com</span></span>
+                        </div> 
+                    </td>
+                    <td>Hyderabad</td>
+                    <td>Product Engg</td>
+                    <td>Full-stack Developer</td>
+                    <td>TZ002341</td>
+                    <td>
+                        <div class="active-button">
+                            <span>Active</span>
+                        </div>
+                    </td>
+                    <td>12/03/2023</td>
+                    <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
+                </tr>
+    
+                <tr>
+                    <td><input type="radio" name="checkbox7" id="checkbox7"><label for="sample"></label></td>
+                    <td>
+                        <div class="user-profile-box">
+                            <img src="./images/man.jpg" alt="Human Avatar" srcset="">
+                            <span class="span-outside-userprofilebox">Edgar Jones<br><span class="span-inside-userprofilebox">edgar@tezo.com</span></span>
+                        </div> 
+                    </td>
+                    <td>Hyderabad</td>
+                    <td>Product Engg</td>
+                    <td>Full-stack Developer</td>
+                    <td>TZ002341</td>
+                    <td>
+                        <div class="active-button">
+                            <span>Active</span>
+                        </div>
+                    </td>
+                    <td>12/03/2023</td>
+                    <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
+                </tr>
+    
+                <tr>
+                    <td><input type="radio" name="checkbox8" id="checkbox8"><label for="sample"></label></td>
+                    <td>
+                        <div class="user-profile-box">
+                            <img src="./images/man.jpg" alt="Human Avatar" srcset="">
+                            <span class="span-outside-userprofilebox">Edgar Jones<br><span class="span-inside-userprofilebox">edgar@tezo.com</span></span>
+                        </div> 
+                    </td>
+                    <td>Hyderabad</td>
+                    <td>Product Engg</td>
+                    <td>Full-stack Developer</td>
+                    <td>TZ002341</td>
+                    <td>
+                        <div class="active-button">
+                            <span>Active</span>
+                        </div>
+                    </td>
+                    <td>12/03/2023</td>
+                    <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
+                </tr>
+    
+                <tr>
+                    <td><input type="radio" name="checkbox9" id="checkbox9"><label for="sample"></label></td>
+                    <td>
+                        <div class="user-profile-box">
+                            <img src="./images/man.jpg" alt="Human Avatar" srcset="">
+                            <span class="span-outside-userprofilebox">Edgar Jones<br><span class="span-inside-userprofilebox">edgar@tezo.com</span></span>
+                        </div> 
+                    </td>
+                    <td>Hyderabad</td>
+                    <td>Product Engg</td>
+                    <td>Full-stack Developer</td>
+                    <td>TZ002341</td>
+                    <td>
+                        <div class="active-button">
+                            <span>Active</span>
+                        </div>
+                    </td>
+                    <td>12/03/2023</td>
+                    <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
+                </tr>
+    
+                <tr>
+                    <td><input type="radio" name="checkbox10" id="checkbox10"><label for="sample"></label></td>
+                    <td>
+                        <div class="user-profile-box">
+                            <img src="./images/man.jpg" alt="Human Avatar" srcset="">
+                            <span class="span-outside-userprofilebox">Edgar Jones<br><span class="span-inside-userprofilebox">edgar@tezo.com</span></span>
+                        </div> 
+                    </td>
+                    <td>Hyderabad</td>
+                    <td>Product Engg</td>
+                    <td>Full-stack Developer</td>
+                    <td>TZ002341</td>
+                    <td>
+                        <div class="active-button">
+                            <span>Active</span>
+                        </div>
+                    </td>
+                    <td>12/03/2023</td>
+                    <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
+                </tr>
+    
+                <tr>
+                    <td><input type="radio" name="checkbox11" id="checkbox11"><label for="sample"></label></td>
+                    <td>
+                        <div class="user-profile-box">
+                            <img src="./images/man.jpg" alt="Human Avatar" srcset="">
+                            <span class="span-outside-userprofilebox">Edgar Jones<br><span class="span-inside-userprofilebox">edgar@tezo.com</span></span>
+                        </div> 
+                    </td>
+                    <td>Hyderabad</td>
+                    <td>Product Engg</td>
+                    <td>Full-stack Developer</td>
+                    <td>TZ002341</td>
+                    <td>
+                        <div class="active-button">
+                            <span>Active</span>
+                        </div>
+                    </td>
+                    <td>12/03/2023</td>
+                    <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
+                </tr>
+    
+                <tr>
+                    <td><input type="radio" name="checkbox12" id="checkbox12"><label for="sample"></label></td>
+                    <td>
+                        <div class="user-profile-box">
+                            <img src="./images/man.jpg" alt="Human Avatar" srcset="">
+                            <span class="span-outside-userprofilebox">Edgar Jones<br><span class="span-inside-userprofilebox">edgar@tezo.com</span></span>
+                        </div> 
+                    </td>
+                    <td>Hyderabad</td>
+                    <td>Product Engg</td>
+                    <td>Full-stack Developer</td>
+                    <td>TZ002341</td>
+                    <td>
+                        <div class="active-button">
+                            <span>Active</span>
+                        </div>
+                    </td>
+                    <td>12/03/2023</td>
+                    <td><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg></td>
+                </tr>
+            </tbody>
         </table>    
     </section>
 
-    <!-- script for sidebar -->
-    <script>
-    
-        function filtersection(){
-            
-            const open=document.querySelector(".filter-magic");
-            const usersection=document.querySelector(".user-section");
-            
-            if(open.style.display=="none"){
-                open.style.display="flex";
-            }
-            else{
-                open.style.display="none";
-            }
-        }
-
-        function showsidebar(){
-            const sd=document.querySelector(".sidebar");
-            const menu=document.querySelector(".menu");
-            const hd=document.querySelector(".header-searchbar");
-            sd.style.top=0;
-            sd.style.display="flex";
-            menu.style.display="none";
-            hd.style.margin="0 0 0 13rem";
-        }
-        
-        function hidesidebar(){
-            const sd=document.querySelector(".sidebar");
-            const menu=document.querySelector(".menu");
-            menu.style.display="block";
-            sd.style.display="none";
-        }
-    </script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

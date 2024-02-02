@@ -1,9 +1,9 @@
 body{
     margin-right: 2rem;
     font-family: 'Roboto', sans-serif;
-    margin-top: .5rem;    
+    margin-top: .5rem;   
 }
-/* header and sidebar */
+/* Header and Sidebar */
 .sidebar-buttons{
     height: 100%;
     display: flex;
@@ -14,38 +14,38 @@ body{
     color: rgba(129,133,137,255);
     font-weight: 500;
 }
-.logo
-{
+.sidebar-buttons a{
+    text-decoration: none;
+}
+.logo{
     width: 6rem;
 }
-.backbutton
-{
+.backbutton{
     height: 2rem;
     width: 2rem;
 }
-.logo-arrow
-{
+.logo-arrow{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header-ul
-{
+.menu{
+    display: none;
+}
+.navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.header-ul li
-{
+.navbar li{
     list-style: none;
 }
-.dash-right svg
-{
+.dash-right svg{
     height: .8rem;
     width: 1rem;
 }
-.header-searchbar
-{
+.header-searchbar{
+    margin-left: 12.9rem;
     padding-left: .5rem;
     padding-right: .5rem;
     width: 62rem;
@@ -55,6 +55,12 @@ body{
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: .3rem;
+}
+.search-box{
+    width: 100%;
+}
+.search-box:focus{
+    outline: none;
 }
 ::placeholder{
     color: rgba(208,213,218,255);
@@ -69,89 +75,75 @@ body{
     margin-top: -.8rem;
     margin-left: 1.5rem;
 }
-.searchpart
-{
+.search-field{
     display: flex;
     align-items: center;
     gap: 1rem;
     width: 60%;
 }
-.searchpart img
-{
+.search-field img{
     height: 1.5rem;
     width: 1.5rem;
 }
-.profile
-{
+.profile{
     margin-top: 1rem;
     margin-left: 5rem;
     height: 3rem;
     width: 18%;
 }
-.profile img
-{
+.profile img{
+    cursor: pointer;
     height: 2rem;
     width: 2rem;
 }
-.profile-box
-{
+.profile-box{
     width: 17%;
     height: 3rem;
     display: flex;
     gap: 1rem;
     align-items: center;
 }
-.man
-{
+.man{
     position: relative;
     z-index: 3;
 }
-.man img
-{
+.man img{
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
 }
-.profile-box p
-{
+.profile-box span{
     font-size: .7rem;
 }
-.profile-box span
-{
+.profile-box .span-inside{
     font-weight: bold;
 }
-#search
-{
+#search{
     border: none;
 }
 
 /* vertical sidebar */
 .sidebar{
-    margin-top: -.1rem;
+    margin-top: -4rem;
     position: absolute;
     padding-left: .2rem;
     padding-top: 1.4rem;
     width: 190px;
     height: 100%;
-    display: none;
+    display: flex;
     justify-content: space-between;
     flex-direction: column;
-    gap: 27rem;
-}
+    gap: 27rem;}
 
-.dashboard select
-{
+.dashboard select{
     width: 9rem;
     border: none;
     height: 1rem;
 }
-.employee-seperate
-{
+.employee-seperate{
     color:rgba(245,92,92,255);
 }
-
-.dashboard
-{
+.dashboard{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -162,8 +154,7 @@ body{
     color: rgba(166,169,172,255);
     font-size: .7rem;
 }
-.dashboard-seperate
-{
+.dashboard-seperate{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -175,7 +166,7 @@ body{
     margin-bottom: 0;
     color: rgba(245,94,94,255);
     font-size: .7rem;
-    padding-right: 0.5rem 
+    padding-right: 0.5rem; 
 }
 .corner-line{
     height: 2rem;
@@ -187,30 +178,24 @@ body{
     display:flex;
     justify-content: space-between;
 }
-
-
 .dashboard-seperate span{
     color: rgba(246,112,112,255);
     font-weight: 500;
 }
-.dash-left
-{
+.dash-left{
     margin-left: .3rem;
     display: flex;
-    
     gap: .4rem;
     align-items: center;
 }
-.heading
-{
+.heading{
     margin-left: .5rem;
     margin-top: 1rem;
     font-size: .7rem;
     color: rgba(211,212,213,255);
     font-weight: 500;
 }
-.department-button-left
-{
+.department-button-left{
     margin-left: .5rem;
     margin-top: 0;
     display: flex;
@@ -219,14 +204,10 @@ body{
     gap: 1rem;
     color: rgba(166,170,173,255);
 }
-
-.sidebar li
-{
+.sidebar li{
     list-style: none;
 }
-
-.update-section
-{
+.update-section{
     height: fit-content;
     width: fit-content;
     margin-right: 1rem;
@@ -235,30 +216,30 @@ body{
     font-size: .8rem;
     padding: .6rem .5rem .6rem .5rem;
 }
-.install
-{
+.install{
     color: rgba(245,96,96,255);
 }
-.dismiss-button
-{
+.dismiss-button{
     width: 5rem;
     height: 2rem;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: .4rem;
     background-color: rgba(253,230,230,255);
     color: rgba(248,145,145,255);
+    cursor: pointer;
 }
-.update-buttons
-{
+.update-buttons{
     display: flex;
     align-items: center;
     gap: .5rem;
 }
-.accept-button
-{
+.accept-button{
     display: flex;
+    border: none;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
     width: 5rem;
@@ -267,18 +248,20 @@ body{
     background-color: rgba(244,72,72,255);
     color: white;
 }
-/* add employee section */
-.add-employee
-{
+
+/* Add Employee section */
+.add-employee{
+    margin-top: 1.4rem;
     margin-left: 12.9rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.add-employee-button
-{
+.add-employee-button{
+    border: none;
     width: 12rem;
     display: flex;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
     height: 2.5rem;
@@ -295,7 +278,6 @@ body{
     font-size: 1rem;
     font-weight: 500;
 }
-
 .add-employee-conetentpart span{
     font-size: .8rem;
     color: rgba(179,187,194,255);
@@ -311,7 +293,7 @@ body{
     color: rgba(179,187,194,255);
 }
 
-/* Info Card List Section*/
+/* Info Card List Section */
 .info-cards-list{
     margin-left: 12.9rem;
     display: flex;
@@ -324,7 +306,7 @@ body{
     gap:.4rem;
 }
 .info-card{
-    width: 17rem;
+    width: 15rem;
     padding-left: 1.5rem;
     padding-top: 1.5rem;
     padding-right: 1rem;
@@ -359,21 +341,17 @@ body{
     font-weight: 500;
     font-size: .7rem;
 }
-.user-profile-box img
-{
+.user-profile-box img{
     border-radius: 50%;
     height: 2.3rem;
     width: 2.2rem;
 }
-.user-profile-box p
-{
+.user-profile-box .span-outside{
     color: black;
     font-weight: 500;
     font-size: .8rem;
 }
-.user-profile-box span
-{
+.user-profile-box .span-inside{
     font-size: .7rem;
     color: rgba(105,105,105,255);
 }
-
