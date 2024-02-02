@@ -1,0 +1,508 @@
+body{
+    padding-right: 2rem;
+    font-family: 'Roboto', sans-serif;
+    margin-top: .5rem;    
+}
+
+/* header and sidebar */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar li{
+    list-style: none;
+}
+.menu{
+    display: none;
+}
+.dash-right svg{
+    height: .8rem;
+    width: 1rem;
+}
+.header-searchbar{
+    margin-left: 12.9rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    width: 55rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: .3rem;
+}
+::placeholder{
+    color: rgba(208,213,218,255);
+}
+.green-dot{
+    position: relative;
+    z-index: 90;
+    height: .5rem;
+    width: .5rem;
+    background-color: rgba(40,199,111,255);
+    border-radius: 50%;
+    margin-top: -.8rem;
+    margin-left: 1.5rem;
+}
+.search-field{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 60%;
+}
+.search-field img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.profile{
+    margin-top: 1rem;
+    margin-left: 5rem;
+    height: 3rem;
+    width: 18%;
+}
+.profile img{
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+}
+.profile-box{
+    width: 17%;
+    height: 3rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.man{
+    position: relative;
+    z-index: 3;
+}
+.man img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.profile-box span{
+    font-size: .7rem;
+}
+.profile-box .span-inside{
+    font-weight: bold;
+}
+#search{
+    border: none;
+}
+.search-box{
+    width: 100%;
+}
+.search-box:focus{
+    outline: none;
+}
+.sidebar{
+    margin-top: -4rem;
+    position: absolute;
+    padding-left: .2rem;
+    padding-top: 1.4rem;
+    width: 190px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.dashboard select{
+    width: 9rem;
+    border: none;
+    height: 1rem;
+}
+.employee-seperate{
+    color:rgba(245,92,92,255);
+}
+.dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    height: 2rem;
+    color: rgba(166,169,172,255);
+    font-size: .7rem;
+}
+.dashboard-seperate{
+    display: flex;
+    align-items: center;
+    padding: 0 .5rem 0 .2rem;
+    justify-content: space-between;
+    background-color:rgba(253,233,233,255) ;
+    width: 180px;
+    height: 2rem;
+    border-radius: .5rem;
+    color: rgba(166,169,172,255);
+    font-size: .7rem;
+}
+.dash-left{
+    display: flex;
+    gap: .4rem;
+    align-items: center;
+}
+.heading{   
+    margin-top: .4rem;
+    font-size: .7rem;
+    color: rgba(211,212,213,255);
+    font-weight: 400;
+}
+
+
+.department-button-square{
+    border-radius: 1rem;
+    height: 1rem;
+    width: fit-content;
+    color: rgba(246,117,117,255);
+    padding: .3rem .5rem .3rem .5rem;
+    text-align: center;
+    background-color: rgba(255,244,244,255);
+}
+
+.department-button-square:hove{
+    background-color: rgba(244,72,72,255);
+    color: white;
+}
+
+.department-button{
+    width: 11rem;
+    height: 2rem;
+    display: flex;
+    font-size: .8rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: .5rem;
+    padding-right: .6rem;
+    border-radius: .4rem;
+}
+.department-button:hover{
+    .department-button-squar{
+        background-color: rgba(244,72,72,255);
+        color: white;
+    }
+    background-color: rgba(247,248,249,255);
+}
+.department-button-left{
+    margin-left: .5rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    gap: 1rem;
+    color: rgba(166,170,173,255);
+}
+.department-button-left a{
+    color: rgba(166,170,173,255);
+    text-decoration: none;
+}
+.greydot{
+    height: .5rem;
+    width: .5rem;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.sidebar li{
+    list-style: none;
+}
+
+.update-section{
+    height: fit-content;
+    width: fit-content;
+    margin-right: 1rem;
+    background-color: rgba(254,246,246,255);
+    border-radius: .5rem;
+    font-size: .8rem;
+    padding: .6rem .5rem .6rem .5rem;
+}
+.install{
+    color: rgba(245,96,96,255);
+}
+.dismiss-button{
+    width: 5rem;
+    cursor: pointer;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .4rem;
+    background-color: rgba(253,230,230,255);
+    color: rgba(248,145,145,255);
+}
+.update-buttons{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.accept-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 5rem;
+    height: 2rem;
+    border-radius: .4rem;
+    background-color: rgba(244,72,72,255);
+    color: white;
+}
+.logo{
+    width: 6rem;
+}
+.backbutton{
+    height: 2rem;
+    width: 2rem;
+}
+.logo-arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Add Employee Section*/
+.add-employee{
+    margin-left: 12.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.export-button{
+    height: 2.3rem;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(144,156,171,255);
+    width: 7rem;
+    background-color: rgba(252,252,252,255);
+    border: 1px solid black;
+    border-radius: .5rem;
+}
+.add-employee-buttons{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.add-employee-button{
+    width: 12rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    text-align: center;
+    color: white;
+    background-color: rgba(244,72,72,255);
+    border-radius: .5rem;
+    border: none;
+}
+.add-employee-content h2{
+    color: rgba(76,95,113,255);
+}
+.add-employee-content p{
+    margin-top: 0;
+    color: rgba(183,191,198,255);
+    font-weight: 200;
+}
+
+/* Filter By Alphabets */
+.filter{
+    margin-left: 12.9rem;
+    margin-top: 1rem;
+    display: flex;
+    gap: .3rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.alphabet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(234,235,238,255);
+    color: rgba(174,182,194,255);
+    height: 2.5rem;
+    width: 2.2rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+.alphabet:hover{
+    color: white;
+    background-color: rgba(244,72,72,255);
+}
+.filter-image{
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-right: .5rem;
+    cursor: pointer;
+}
+
+/* filter section */
+.filter-option{
+    height: 3rem;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 12.9rem;
+    margin-top: 2rem;
+    padding-left: .6rem;
+    padding-right: .6rem;
+    border: 2px solid rgba(251,212,212,255);
+    border-radius: .5rem;
+    background-color: rgba(253,242,242,255);
+}
+.filter-left{
+    height: 3rem;
+    display: flex;
+    gap: .5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.filter-right{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    justify-content: space-between;
+}
+.reset-button{
+    height: 1.7rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgba(255,121,131,255);
+    background-color: white;
+    color:rgba(255,121,131,255);    
+    border-radius: .3rem;
+    font-size: .8rem;
+}
+.apply-button{
+    height: 1.7rem
+    ;width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgba(255,121,131,255);
+    background-color: rgba(244,72,72,255);
+    color:white;    
+    border-radius: .3rem;
+    font-size: .8rem;
+}
+select{
+    border:1px solid rgba(255,121,131,255);
+    padding: .5rem;
+    border-radius: .3rem;
+    color: rgba(108,120,145,255);
+}
+.filter-icon{
+    display: flex;
+    gap: .4rem;
+}
+.filter-icon spa{
+    color: rgba(246,118,118,255);
+    font-size: .9rem;
+}
+
+/* user-section */
+.user-section{
+    height: 100%; 
+    margin-top: 1rem;   
+    margin-left: 13rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: .5rem;
+    padding: 1.2rem 0 1.2rem 0;
+}
+.delete-add-row{
+    margin: 0 1.4rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.arrow-down{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.delete-button{   
+    height: 2rem;
+    width: 5rem;
+    background-color: rgba(248,145,145,255);
+    color:rgba(253,223,223,255);
+    border-radius: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.active-button{
+    height: 2rem;
+    width: 4rem;
+    border-radius: .3rem;
+    background-color: rgba(231,244,232,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(152,197,179,255);
+}
+.user-profile-box{
+    display: flex;
+    align-items: center;
+    gap:.4rem;
+}
+.user-profile-box img{
+    border-radius: 50%;
+    height: 1.7rem;
+    width: 1.7rem;
+}
+.user-profile-box .span-outside-userprofilebox{
+    color: black;
+}
+.user-profile-box .span-inside-userprofilebox{
+    color: rgba(105,105,105,255);
+}
+.inside-labels-user{   
+    height: 2rem;
+    display: flex;
+    font-size: .7rem;
+    align-items: center;
+    color: rgba(128,139,160,255);
+}
+.inside-labels-user img{
+    height: 1rem;
+    width: 1rem;
+}
+table{
+    width: 100%;
+    border-collapse:collapse;
+}
+tr{
+    border-top: 1px solid black;
+}
+tr:hover{
+    background-color: rgba(255,244,244,255);
+}
+t{
+    padding: .3rem 1rem 0.3rem .4rem;
+}
+td{
+    padding:.7rem .4rem;
+    color: rgba(105,105,105,255);
+}
+
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"] + label{
+    width: 1rem; 
+    height: 1rem;
+    display: inline-block;
+    background-color: #fff; 
+    border: 1px solid rgba(223,223,223,255); 
+    border-radius: .2rem;
+}
+
