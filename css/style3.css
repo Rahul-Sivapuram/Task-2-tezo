@@ -371,7 +371,7 @@ select{
     gap: .7rem;
 }
 .info-card{
-    width: 15rem;
+    width: 18rem;
     padding-top: 1rem;
     padding-left: 1.5rem;
     padding-right: 1rem;
@@ -397,7 +397,7 @@ select{
 .info-row span{color: rgba(132,143,162,255);font-size: .8rem;font-weight: 500;}
 .arrow-item{
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
     cursor: pointer;
 }
@@ -410,6 +410,10 @@ select{
     width: fit-content;
     display: flex;
     justify-content: space-between;
+}
+.profiles-many img{
+    height: 20px;
+    width: 20px;
 }
 .img1{
     height: fit-content;
@@ -454,6 +458,135 @@ select{
 .employee-count span{
     font-size: .4rem;
 }
+
+
+/* Add New Role Section */
+.addnewrole-page{
+    display: none;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 1.5rem;
+    margin-left: 12.9rem;
+}
+.addnewrole-page option{
+    color: black;
+    font-weight: 600;
+}
+.row-one{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    width: 50%;
+}
+.row-one input{
+    width: 15rem;
+    height: 1.7rem;
+}
+.row-one .seperate-select{
+    width: 15rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    background-color: rgba(244,245,247,255)
+}
+.field{
+    width: fit-content;
+}
+.search-dropdown{
+    width: 23.6rem;
+    height: 2rem;
+    display: flex;
+    padding: 0 .7rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    background-color: rgba(244,245,247,255);
+}
+.search-dropdown input{
+    border: none;
+    height: 100%;
+    width: 40%;
+}
+
+.checkbox-dropdownlist{
+    margin-top: .2rem;
+    display: none;
+    flex-direction: column;
+    gap: .2rem;
+    width: 25rem;
+}
+.dropdown-profile{
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.checkbox-items{
+    padding: .2rem;
+    border: 1px solid lightgray;
+    border-radius: .2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkbox-items-left{
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+}
+.text-field{
+    margin-bottom: .4rem;
+    display: flex;
+    gap: .2rem;
+    flex-direction: column;
+    height: 4rem;
+}
+.text-field-seperate{
+    margin-bottom: .4rem;
+    display: flex;
+    gap: .2rem;
+    flex-direction: column;
+}
+.text-field select{
+    width: 25rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    background-color: rgba(244,245,247,255);
+}
+.textarea-section{
+    display: flex;
+}
+
+.role-buttons{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+.role-dismiss-button{
+    border: none;
+    width: 7rem;
+    cursor: pointer;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .4rem;
+    background-color: rgba(253,230,230,255);
+    color: rgba(248,145,145,255);
+}
+.role-accept-button{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 7rem;
+    height: 2rem;
+    border-radius: .4rem;
+    background-color: rgba(244,72,72,255);
+    color: white;
+}
+
 
 
 @media (max-width:1024px){
